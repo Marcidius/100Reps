@@ -9,7 +9,7 @@
 
 <header id="header" class="navbar">
   <ul id="header-inner">
-    <li (click)="toggleDeviceMenu()" id="menu-trigger" ng-class="{'open': isOpen}">
+    <li (click)="toggleDeviceMenu()" id="menu-trigger" [class.open]="isOpen">
       <div class="line-wrap">
         <div class="line top"></div>
         <div class="line center"></div>
