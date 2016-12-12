@@ -5,12 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './app.routing';
-import { LayoutModule } from './layout/layout.module'
+import { LayoutModule } from './layout/layout.module';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component'
 
 @NgModule({
   declarations: [
     AppComponent, 
-    routingComponents
+    routingComponents, LoginComponent, DashboardComponent
   ],
   imports: [
     BrowserModule,
