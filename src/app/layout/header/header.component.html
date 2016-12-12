@@ -1,0 +1,88 @@
+<div id="search-header">
+  <div class="title">Search</div>
+  <div class="search-field">
+    <input class="form-control" type="text" placeholder="Search">
+    <div class="actions actions-alt"><a href="#"><i class="mdi-navigation-arrow-forward"></i></a></div>
+  </div>
+  <div id="close-search" class="actions actions-alt"><a href="#"><i class="mdi-content-clear"></i></a></div>
+</div>
+
+<header id="header" class="navbar">
+  <ul id="header-inner">
+    <li (click)="toggleDeviceMenu()" id="menu-trigger" [class.open]="isOpen">
+      <div class="line-wrap">
+        <div class="line top"></div>
+        <div class="line center"></div>
+        <div class="line bottom"></div>
+      </div>
+    </li>
+    <li id="logo">
+      <img src="./assets/images/beckLogo.svg" />
+    </li>
+    <li class="pull-right">
+      <ul class="actions actions-alt">
+        <li>
+          <a href="" id="search">
+            <i class="material-icons">search</i>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" href="">
+            <i class="material-icons">help</i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="">More action</a>
+            </li>
+            <li>
+              <a href="">More action</a>
+            </li>
+            <li>
+              <a href="">More action</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" href>
+            <i class="material-icons">person</i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="#"><i class="material-icons">swap_horiz</i>Change Subdomain</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">account_box</i>Account Settings</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">power_settings_new</i>Logout</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" href>
+            <i class="material-icons">more_vert</i>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li>
+              <a href="" id="fullscreen" (click)="toggleFullScreen()">
+                <i class="material-icons" ngIf="!isFullScreen">fullscreen</i>
+                <i class="material-icons" ngIf="isFullScreen">fullscreen_exit</i>
+                Toggle Fullscreen
+              </a>
+            </li>
+            <li>
+              <a href="" id="menu-toggle" (click)="toggleMenu()">
+                <i class="material-icons" ngIf="!isTight">first_page</i>
+                <i class="material-icons" ngIf="isTight">last_page</i>
+                Toggle Side Menu
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</header>
