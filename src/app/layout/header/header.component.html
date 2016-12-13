@@ -17,72 +17,20 @@
       </div>
     </li>
     <li id="logo">
-      <a [routerLink]="['/dashboard']"><img src="./assets/images/beckLogo.svg" /></a>
+      <a [routerLink]="['/dashboard']"><img src="./assets/images/bossLogo.svg" /></a>
     </li>
     <li class="pull-right">
-      <ul class="actions actions-alt">
-        <li>
-          <a href="" id="search">
-            <i class="material-icons">search</i>
+      <div class="btn-group">
+        <div class="btn-group">
+          <a href="bootstrap-elements.html" data-target="#" class="account btn btn-raised dropdown-toggle" data-toggle="dropdown">
+            Username.Username
+            <b><span class="caret"></span></b>
           </a>
-        </li>
-        <li class="dropdown">
-          <a data-toggle="dropdown" href="">
-            <i class="material-icons">help</i>
-          </a>
-
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-              <a href="">More action</a>
-            </li>
-            <li>
-              <a href="">More action</a>
-            </li>
-            <li>
-              <a href="">More action</a>
-            </li>
+          <ul class="dropdown-menu">
+            <li><a ng-click="vm.logout()">Logout</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a data-toggle="dropdown" href>
-            <i class="material-icons">person</i>
-          </a>
-
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-              <a href="#"><i class="material-icons">swap_horiz</i>Change Subdomain</a>
-            </li>
-            <li>
-              <a href="#"><i class="material-icons">account_box</i>Account Settings</a>
-            </li>
-            <li>
-              <a href="#"><i class="material-icons">power_settings_new</i>Logout</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a data-toggle="dropdown" href>
-            <i class="material-icons">more_vert</i>
-          </a>
-
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-              <a href="" id="fullscreen" (click)="toggleFullScreen()">
-                <i class="material-icons" ngIf="!isFullScreen">fullscreen</i>
-                <i class="material-icons" ngIf="isFullScreen">fullscreen_exit</i>
-                Toggle Fullscreen
-              </a>
-            </li>
-            <li>
-              <a href="" id="menu-toggle" (click)="toggleMenu()">
-                <i class="material-icons" ngIf="!isTight">first_page</i>
-                <i class="material-icons" ngIf="isTight">last_page</i>
-                Toggle Side Menu
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </li>
   </ul>
 </header>
