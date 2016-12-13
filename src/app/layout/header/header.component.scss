@@ -1,3 +1,113 @@
+@import "../../../assets/styles/_color";
+@import "../../../assets/styles/_variables";
+
+.account{
+  color: #000000;
+  font-size: 16px;
+  margin-top: -5px;
+}
+
 #header {
-    background-color: lightseagreen;
+  background-color: #147971;
+  height: $headerHeight;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  left: 0;
+  padding-right: 10px;
+  position: fixed;
+  top: 0;
+  transition: all 200ms ease 0s;
+  width: 100%;
+  z-index: 10;
+
+  #header-inner {
+    list-style: outside none none;
+    padding: 15px 0;
+    height: 100%;
+
+    >li{
+      height: 100%;
+
+      &:not(.pull-right) {
+        float: left;
+      }
+    }
+
+    #menu-trigger{
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      cursor: pointer;
+      height: 45px;
+      width: 45px;
+      display: none;
+
+      &::before {
+        content: "";
+        background: rgba(255, 255, 255, 0.22) none repeat scroll 0 0;
+        border-radius: 50%;
+        position: absolute;
+        transform: scale(0);
+        transition: all 300ms ease 0s;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+
+      .line-wrap{
+        height: auto;
+        transition: all 300ms ease 0s;
+        width: 18px;
+        position: absolute;
+        top: 16px;
+        left: 14px;
+
+        .line {
+          height: 2px;
+          transition: all 300ms ease 0s;
+          width: 18px;
+          background-color: #fff;
+
+          &.center {
+            margin: 3px 0;
+          }
+        }
+      }
+
+      &.open{
+        &::before {
+          transform: scale(1);
+        }
+
+        .line-wrap{
+          transform: rotate(180deg);
+
+          .line{
+            &.bottom {
+              transform: translateX(8px) translateY(-1px) rotate(-45deg);
+              width: 12px;
+            }
+
+            &.top {
+              transform: translateX(8px) translateY(1px) rotate(45deg);
+              width: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #logo{
+    position:absolute;
+    height: 40px !important;
+    width: 200px;
+    left: 15px;
+    top: 10px;
+
+    img{
+      width:auto;
+      height:100%;
+    }
+  }
 }
