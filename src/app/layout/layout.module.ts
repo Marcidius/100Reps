@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { HeaderComponent }   from './header/header.component';
 import { SidebarComponent }   from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 
 @NgModule({
-    imports: [],
+    imports: [RouterModule],
     exports: [ 
         HeaderComponent,
         SidebarComponent,
@@ -16,6 +17,6 @@ import { ContentComponent } from './content/content.component';
         SidebarComponent,
         ContentComponent
     ],
-    providers: [],
+    providers: []
 })
 export class LayoutModule { }
