@@ -1,23 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { BrowserModule }  from '@angular/platform-browser';
+import { FormsModule }    from '@angular/forms';
+import { HttpModule }     from '@angular/http';
+import { NgModule }       from '@angular/core';
+import { RouterModule }   from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule, routingComponents } from './app.routing';
-import { LayoutModule } from './layout/layout.module'
+import { AppRoutingModule, 
+         RoutingComponents } from './app.routing';
+import { AppComponent }       from './app.component';
+import { LayoutModule }       from './layout/layout.module';
+
 
 @NgModule({
   declarations: [
     AppComponent, 
-    routingComponents
+    RoutingComponents
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
     AppRoutingModule,
-    LayoutModule
+    HttpModule,
+    LayoutModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
