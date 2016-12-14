@@ -21,13 +21,13 @@
     </li>
     <li class="pull-right">
       <div class="btn-group">
-        <div class="btn-group">
-          <a href="bootstrap-elements.html" data-target="#" class="account btn btn-raised dropdown-toggle" data-toggle="dropdown">
+        <div dropdown class="btn-group">
+          <a dropdownToggle class="account btn btn-raised">
             Username.Username
             <b><span class="caret"></span></b>
           </a>
-          <ul class="dropdown-menu">
-            <li><a ng-click="vm.logout()">Logout</a></li>
+          <ul dropdownMenu class="dropdown-menu">
+            <li><a [routerLink]="['/login']" ng-click="vm.logout()">Logout</a></li>
           </ul>
         </div>
       </div>
