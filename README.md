@@ -3,7 +3,7 @@ Angular repo for BOSS/BESS conversion
 
 ## Environment Requirements
 
-1. node v6.4.0
+1. node v6.9.2
 
 
 

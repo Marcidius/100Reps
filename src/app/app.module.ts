@@ -3,9 +3,10 @@ import { FormsModule }    from '@angular/forms';
 import { HttpModule }     from '@angular/http';
 import { NgModule }       from '@angular/core';
 import { RouterModule }   from '@angular/router';
+import { AlertModule }    from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppRoutingModule, 
-         RoutingComponents } from './app.routing';
+         RoutingComponents }  from './app.routing';
 import { AppComponent }       from './app.component';
 import { LayoutModule }       from './layout/layout.module';
 
@@ -21,7 +22,8 @@ import { LayoutModule }       from './layout/layout.module';
     AppRoutingModule,
     HttpModule,
     LayoutModule,
-    RouterModule
+    RouterModule,
+    AlertModule
   ],
   providers: [],
   bootstrap: [AppComponent]
