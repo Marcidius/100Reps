@@ -5,10 +5,11 @@ import { NgModule }       from '@angular/core';
 import { RouterModule }   from '@angular/router';
 import { AlertModule }    from 'ng2-bootstrap/ng2-bootstrap';
 
+import { LayoutModule }   from './layout/layout.module';
+
 import { AppRoutingModule, 
-         RoutingComponents }  from './app.routing';
-import { AppComponent }       from './app.component';
-import { LayoutModule }       from './layout/layout.module';
+        RoutingComponents } from './app.routing';
+import { AppComponent }     from './app.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { LayoutModule }       from './layout/layout.module';
     RouterModule,
     AlertModule
   ],
+  exports: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
