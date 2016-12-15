@@ -1,12 +1,27 @@
 # BOSSng
 Angular repo for BOSS/BESS conversion
 
-## Environment Requirements
-
+## Environment Requirements:
+##############################################################################################################
 1. node v6.9.2
 
 
+## To Start Local Server:
+##############################################################################################################
+1. If not done already, run an `npm install` in the `BOSSng` project folder.
+1. `npm start`
 
+
+
+## IDE Issues:
+##############################################################################################################
+1. For Typescript transpiling, make sure your IDE is pointing to the Typescript module in your node_modules 
+    and not your globally installed version for it's Typescript transpiling. (Typescript v2.0.3)
+2. 
+
+
+
+## ANGULAR-CLI Default Documentation:
 ##############################################################################################################
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.22-1.
 
