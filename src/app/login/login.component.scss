@@ -1,0 +1,150 @@
+
+$primary: #8bc34a;
+$primaryhvr: #D8E472;
+
+
+#login {
+
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  row{
+    width: 100%;
+  }
+  .flex-item {
+    // line-height: 150px;
+    // color: white;
+    // font-weight: bold;
+    // font-size: 3em;
+    // text-align: center;
+  }
+  body {
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  .outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .circle {
+    width: 35%;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 300;
+    padding: 18% 0;
+    line-height: 0;
+    position: relative;
+    margin: 45px auto;
+    color: #fff;
+    cursor: pointer;
+    background: #645F5A;
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .center {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  input::-webkit-input-placeholder {
+    color: #fff !important;
+    font-size: 19px;
+  }
+
+  .form-signin {
+    max-width: 360px;
+    padding: 15px;
+    margin: 0 auto;
+    .form-signin-heading, .checkbox {
+      margin-bottom:10px;
+    }
+    .checkbox {
+      font-weight:normal;
+    }
+    .form-control {
+      position: relative;
+      font-size: 16px;
+      height: auto;
+      padding: 15px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      &:focus {
+        z-index: 2;
+      }
+      input[type="text"] {
+        margin-bottom: 13px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  .account-wall {
+    width: 400px;
+    height: 400px;
+    padding: 69px 0;
+    text-align: center;
+  }
+
+  .paddingtop {
+    margin-top: 58px;
+  }
+
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: #645F5A;
+    &:hover {
+      background-color: $primaryhvr;
+      color: white;
+      border-color: $primaryhvr;
+    }
+  }
+
+  .btn-lg {
+    border-radius: 0;
+    padding: 10px 41px;
+  }
+
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-size: initial;
+    &:hover {
+      text-decoration: underline;
+      color: white;
+    }
+  }
+}

@@ -6,6 +6,8 @@ import { RouterModule }   from '@angular/router';
 import { AlertModule }    from 'ng2-bootstrap/ng2-bootstrap';
 
 import { LayoutModule }   from './layout/layout.module';
+import { LoginModule } from './login/login.module';
+import { SharedModule }   from './shared/shared.module';
 
 import { AppRoutingModule, 
         RoutingComponents } from './app.routing';
@@ -24,7 +26,8 @@ import { AppComponent }     from './app.component';
     HttpModule,
     LayoutModule,
     RouterModule,
-    AlertModule
+    AlertModule,
+    SharedModule
   ],
   exports: [AppComponent],
   providers: [],

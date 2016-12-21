@@ -1,3 +1,26 @@
-<p>
-  login works!
-</p>
+<div id="login" class="outer" >
+    <div class="flex-container">
+        <div class="row">
+      <span class="flex-item">
+        <div class="account-wall">
+            <div class="circle">Beck's</div>
+            <form (ngSubmit)="login()" class="form-signin">
+                <input [(ngModel)]="username" type="text" name="user" placeholder="Username"
+                       class="form-control"
+                       required autofocus>
+                <input [(ngModel)]="password" type="password" name="pass" placeholder="Password"
+                       class="form-control" required>
+                <button class="btn btn-lg btn-primary paddingtop" type="submit">
+                    Login
+                </button>
+
+                <button class="btn btn-lg btn-primary paddingtop" type="button" (click)="userCtrl.logout()">
+                    Logout
+                </button>
+
+            </form>
+        </div> 
+      </span>
+        </div>
+    </div>
+</div>
