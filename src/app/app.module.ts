@@ -26,11 +26,15 @@ import { AppComponent }     from './app.component';
     HttpModule,
     LayoutModule,
     RouterModule,
+
     AlertModule,
+    LoginModule,
     SharedModule
   ],
   exports: [AppComponent],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {  }

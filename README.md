@@ -20,6 +20,15 @@ Angular repo for BOSS/BESS conversion
 2. 
 
 
+## Testing Error/Resolutions:
+##############################################################################################################
+1. Error:  "<router-outlet> is not a known element."
+    Resolution:  a.  import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+                 b.  Add this line of code "schemas: [ CUSTOM_ELEMENTS_SCHEMA ]" in your TestBed.configureTestingModule
+
+2. Error: "Can't bind to 'routerLink' since it isn't a known property of ....
+    Resolution: a. 
+
 
 ## ANGULAR-CLI Default Documentation:
 ##############################################################################################################

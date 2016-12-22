@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent }   from './layout/layout.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+//import { DashboardModule } from './dashboard/dashboard.module';
 import { LoginComponent }     from './login/login.component';
 
 export const routes: Routes = [  
-  { path: '', component: LayoutComponent,
+  { 
+    path: '', component: LayoutComponent,
       children: [
-        {path: 'dashboard', component: DashboardComponent}
+        {path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'}
       ]
   },
   { path: 'login', component: LoginComponent }
@@ -27,6 +28,6 @@ export const routes: Routes = [
 export class AppRoutingModule { }
 
 export const RoutingComponents = [
-    DashboardComponent,
-    LoginComponent
+    // DashboardComponent,
+    // LoginComponent
 ];

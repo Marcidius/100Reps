@@ -12,4 +12,12 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  // login
+  // hit AuthService and attempt a login
+  // if successful then populate the user 
+
+  // else failure - write error message
+
+  // forgot password feature?
+
 }
