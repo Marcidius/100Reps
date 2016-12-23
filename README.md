@@ -27,7 +27,12 @@ Angular repo for BOSS/BESS conversion
                  b.  Add this line of code "schemas: [ CUSTOM_ELEMENTS_SCHEMA ]" in your TestBed.configureTestingModule
 
 2. Error: "Can't bind to 'routerLink' since it isn't a known property of ....
-    Resolution: a. 
+    Resolution: a. Add following import statements to test file...
+                    import { provideRoutes }                    from '@angular/router';
+                    import { RouterTestingModule }              from '@angular/router/testing';
+                b. Add the following to the TestBed configuration:
+                    imports: [ RouterTestingModule ],
+                    providers: [ provideRoutes([ {path: 'fakeRouteForTesting', redirectTo: 'fakeRouteForTesting', pathMatch: 'full'} ])]
 
 
 ## ANGULAR-CLI Default Documentation:

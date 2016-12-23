@@ -6,8 +6,8 @@ import { provideRoutes }                     from '@angular/router';
 import { RouterTestingModule }                     from '@angular/router/testing';
 
 import { HeaderComponent }            from './header.component';
-import { LayoutModule }               from '../layout.module';
-import { SharedModule }               from '../../shared/shared.module';
+//import { LayoutModule }               from '../layout.module';
+//import { SharedModule }               from '../../shared/shared.module';
 import { RouterLinkStubDirective }    from '../../shared/router-stubs';
 import { RouterOutletStubComponent }  from '../../shared/router-stubs';
 

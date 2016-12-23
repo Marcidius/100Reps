@@ -1,6 +1,5 @@
 import { NgModule, ModuleWithProviders }  from '@angular/core';
 import { CommonModule }                   from '@angular/common';
-import { FormsModule }                    from '@angular/forms';
 import { Routes, RouterModule }           from '@angular/router';
 
 import { LoginComponent } from './login.component';
@@ -15,8 +14,7 @@ export const loginRouting = RouterModule.forChild(loginRoutes);
   imports: [
     loginRouting,
 
-    CommonModule,
-    FormsModule
+    CommonModule
   ],
   declarations: [LoginComponent],
   exports: [LoginComponent]
