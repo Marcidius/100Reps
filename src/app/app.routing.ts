@@ -3,16 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutComponent }   from './layout/layout.component';
 //import { DashboardModule } from './dashboard/dashboard.module';
-import { LoginComponent }     from './login/login.component';
+//import { LoginComponent }     from './login/login.component';
 
 export const routes: Routes = [  
   { 
     path: '', component: LayoutComponent,
       children: [
-        {path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'}
+        { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' }
       ]
   },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', loadChildren: './login/login.module#LoginModule' }
 
   // TODO: these routes are meant for ng router lazy loading but they are causing web-pack to fail.  Fix
   //{ path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
