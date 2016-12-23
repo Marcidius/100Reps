@@ -6,8 +6,6 @@ import { provideRoutes }                     from '@angular/router';
 import { RouterTestingModule }                     from '@angular/router/testing';
 
 import { HeaderComponent }            from './header.component';
-//import { LayoutModule }               from '../layout.module';
-//import { SharedModule }               from '../../shared/shared.module';
 import { RouterLinkStubDirective }    from '../../shared/router-stubs';
 import { RouterOutletStubComponent }  from '../../shared/router-stubs';
 
@@ -23,15 +21,6 @@ describe('HeaderComponent', () => {
       providers: [ provideRoutes([{path: 'fakeRouteForTesting', redirectTo: 'fakeRouteForTesting', pathMatch: 'full'}])
       ]
     })
-  
-    // .overrideModule( LayoutModule, {
-    //   remove: {
-    //     imports: [ RouterModule ]
-    //   },
-    //   add: {
-    //     declarations: [ RouterLinkStubDirective, RouterOutletStubComponent ]
-    //   }
-    // })
     .compileComponents()
     .then(() => {
       fixture = TestBed.createComponent(HeaderComponent);
@@ -39,12 +28,6 @@ describe('HeaderComponent', () => {
       fixture.detectChanges();
     })
   }))
-
-  // beforeEach(() => {
-  //   fixture = TestBed.createComponent(HeaderComponent);
-  //   component = fixture.componentInstance;
-  //   fixture.detectChanges();
-  // });
 
   it('should create', () => {
     expect(component).toBeTruthy();
