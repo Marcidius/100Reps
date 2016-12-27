@@ -12,6 +12,6 @@ import { User } from './user';
   ], 
   exports: [],
   providers: [AuthService, UserService],
-  declarations: [ User ]
+  declarations: [ ]
 })
 export class SharedModule { }

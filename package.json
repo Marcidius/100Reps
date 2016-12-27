@@ -1,6 +1,6 @@
 {
-  "name": "bossng",
-  "version": "0.0.0",
+  "name": "100Reps",
+  "version": "0.0.1",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -48,6 +48,7 @@
     "ts-node": "1.2.1",
     "tslint": "4.0.2",
     "typescript": "2.0.3",
-    "webdriver-manager": "10.2.5"
+    "webdriver-manager": "10.2.5",
+    "@ngtools/webpack": "1.1.9"
   }
 }
